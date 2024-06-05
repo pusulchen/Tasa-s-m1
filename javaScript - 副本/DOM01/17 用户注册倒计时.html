@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <textarea name="" id="" cols="30" rows="10">
+    用户注册协议
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ^^^^^^^^^^^^^^^^^^
+  </textarea>
+  <br>
+  <!-- button初始禁用状态 -->
+  <button class="btn" disabled>我已经阅读用户协议(5)</button>
+  <script>
+    // 1.获取元素
+    const btn = document.querySelector(`.btn`)
+    // console.log(btn.innerHTML)  button按钮特殊用innerHTML
+    // 2.倒计时
+    let i = 5
+    // 开定时器
+    let n = setInterval(function () {
+      i--
+      btn.innerHTML = `我已经阅读用户协议(${i})`
+      if (i === 0) {
+        clearInterval(n)
+        // 定时器停了，开按钮
+        btn.disabled = false
+        btn.innerHTML = `同意`
+      }
+    }, 1000)
+  </script>
+</body>
+
+</html>

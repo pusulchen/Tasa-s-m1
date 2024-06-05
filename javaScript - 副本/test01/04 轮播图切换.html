@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .page {
+      width: 500px;
+      height: 400px;
+      overflow: auto;
+    }
+
+    .title li {
+      display: block;
+      background-color: pink;
+      width: 100px;
+      height: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 轮播图切换案例 -->
+
+  <div class="picture">
+
+    <img src="./pictures/1.png" alt="">
+  </div>
+
+  <div class="title">
+    <p>Is i a very handsome boy?</p>
+    <ul class="ul">
+      <li class="screen"></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <div class="button">
+    <button class="left">lt</button>
+    <button class="right">rt</button>
+  </div>
+
+  <script>
+    const picture = [
+      { url: `./pictures/1.png`, title: `我好帅？`, color: `rgb(100,67,68)` },
+      { url: `./pictures/2.png`, title: `我正美？`, color: `rgb(43,35,26)` },
+      { url: `./pictures/3.png`, title: `我是帅？`, color: `rgb(166,131,143)` },
+      { url: `./pictures/4.png`, title: `最帅我？`, color: `rgb(99,72,114)` },
+    ]
+    // 获取元素
+    const pic = document.querySelector(`.`)
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 函数封装
+    function getSum(start = 0, end = 0) { //end = 50 形参
+      let sum = 0
+      for (i = start; i <= end; i++) {
+        sum += i
+      }
+      document.write(sum)
+    }
+
+    // start = alert(+prompt(`start?`))
+    // end = alert(+prompt(`end?`))
+
+    getSum(10, 20)  //调用的小括号里面 实参
+  </script>
+</body>
+
+</html>

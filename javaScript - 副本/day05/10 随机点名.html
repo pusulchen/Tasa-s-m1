@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 随机点名？
+    let arr = [`赵云`, `黄忠`, `关羽`, `张飞`, `马超`,
+      `诸葛亮`, `刘备`, `曹操`]
+    //得到一个随机数，作为数组索引号，这个随机数 0~7
+    let random = Math.floor(Math.random() * arr.length)
+    // [0,1)*8
+    document.write(arr[random])
+
+    // splice(起始位置(下标),删几个元素)
+    arr.splice(random, 1)
+    console.log(arr);
+  </script>
+</body>
+
+</html>

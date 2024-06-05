@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- 输入文本框 -->
+  <input type="text" value="电脑">
+  <button>点击</button>
+  <!-- 勾选框 -->
+  <input type="checkbox" name="" id="" checked>
+  <script>
+    // 获取元素
+
+    const uname = document.querySelector(`input`)
+    // 获取值 获取表单里值 用 表单.value
+    console.log(uname.value); //电脑
+    console.log(uname.innerHTML)  //innerHTML 得不到表单内容
+
+    //设置表单值
+    uname.value = `我要买电脑`
+    uname.type = `password`
+
+    // 1.获取
+    const ipt = document.querySelector(`input`)
+    console.log(ipt.checked)   //false 只接收布尔值
+    // ipt.checked = true
+    ipt.checked = `true`      // 会选中，有隐式转换
+
+    // 1.获取
+    const button = document.querySelector(`button`)
+    console.log(button.disabled);
+  </script>
+</body>
+
+</html>
